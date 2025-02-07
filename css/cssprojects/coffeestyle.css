@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    position: fixed;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScrmgwZaaX04sVyxH3VmL1gl0XVi-HzUG6OLjwqTnnz7nuCAs55PUuMm-5SFEB-3kL_EI&usqp=CAU);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: white;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    position: fixed;
+    z-index: 2000;
+    height: 70px;
+    width: 70px;
+    border-radius: 60%;
+    top: 10px;
+    left: 20px;
+}
+.logo:hover{
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    transition: 0.3s;
+}
+
+h1,li,ul{
+    display: inline;
+
+}
+ul{
+    position: relative;
+    margin-left: 50%;
+    top: 50px;
+}
+
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.nav h1{
+    position: relative;
+    top: 50px;
+    margin-left: 140px;
+}
+
+
+
+.hero{
+    position: relative;
+    z-index: 30;
+    top: 100Px;
+    width: 103%;
+    height: 150px;
+}
+.welcome{
+    width: 100%;
+    height:900px;
+    z-index: 0;
+    overflow: hidden;
+}
+.message{
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    color: white;
+}
+.message h1{
+    font-size: 50px;
+}
+.message h2{
+    font-size: 40px;
+}
+.message button{
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+    color:white;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 20px;
+    
+}
+.menbutn{
+    text-decoration: none;
+    color: white;
+}
+.menbutn:hover{
+    background-color: brown;
+    color:white ;
+    transition: 0.3s;
+
+}
+.message button:hover{
+    width:230px ;
+    height:55px ;
+    
+}
+.menu{
+   display: block;
+   justify-content: center;
+   position: relative;
+   margin-top: 67%;
+   width: 100%;
+   height: 400px;
+   padding-bottom: 100px;
+}
+.menu h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-left: 45%;
+    color: brown;
+    
+}
+.items{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    gap:10%;
+    width: 100%;
+    height: 902px;
+ 
+}
+.items div{
+    margin-top: 10px;
+    height: 400px;
+    width: 400px;
+}
+.imgs{
+    width: 400px;
+    height: 250px;
+    transition: 0.3s;
+}
+.imgs:hover{
+    width: 450px;
+    height: 300px;
+    transition: 0.3s;
+}
+.dishes{
+    margin-top: 10px;
+    font-size: 40px;
+    margin-left: 60px;
+    color: brown;
+}
+.des{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.aboutus{
+    position: relative;
+    height: 135px;
+    width: 100%;
+    top:650px;
+
+}
+
+.aboutus p{
+    margin-left: 15px;
+    font-size: 20px;
+}
+.aboutus h1{
+    margin-left: 41%;
+    font-size: 40px;
+    color: brown;
+}
+.contact{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    top: 700px;
+    margin-bottom: 750px;
+}
+.contact h1{
+    font-size: 40px;
+    margin-left: 40%;
+    color: brown;
+    
+}
+.contact form{
+    margin-top: 20px;
+    font-size: 20px;
+}
+input{
+    width: 200px;
+    height: 20px;
+}
+.frm button{
+    height: 40px;
+    width: 300px;
+    background-color: brown;
+    color: white;
+    transition: 0.3s;
+}
+.frm button:hover{
+    height: 50px;
+    width: 320px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+footer{
+    height: 100px;
+    background-color: brown;
+    color: white;   
+}
+
+
+.coppy{
+    position: relative;
+   top: 40px;
+   margin-left: 40%;
+}
+@media screen  and (max-width:907px) 
+{
+    nav ul{
+        display:flex;
+        flex-direction:column;
+        padding:0;
+        width: 100%;
+    
+    }
+    nav ul li{
+        width: 100%;
+        padding: 10px 0;
+
+    }
+   
+    .nav{
+        height: 200px;
+    }
+} 
+@media  screen and (max-width:500px) {
+    .nav ul{
+    margin-left:600x;
+    }
+}
+@media screen and (max-width:890px){
+    .aboutus{
+        top: 700px;
+        margin-top: 850px;
+    }
+    .contact{
+        top: 500px;
+        margin-top: 300px;
+    }
+    footer{
+        margin-top: 300px;
+    }
+}
